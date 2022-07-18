@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+*{
+    margin: 0;  padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root{
+    --blanco: #fff;
+    --negro: #191919;
+}
+
+body{   background: #191919;  }
+
+.container-reg{
+    background: #eee;
+    background-size: cover;
+    margin-right: 250px;
+    margin-left: 250px;
+    border-radius: 20px;
+}
+
+h1{  color: var(--blanco); font-size: 50px; }
+h1, .container-reg h2{
+    text-align: center;
+    margin: 30px;
+}
+.line{ margin-top: 50px;  border-bottom: 4px solid #191919;   }
+label{ font-size: 18px;  font-weight: bold; }
+.container-reg p{  margin-block-end: 10px;  }
+#fecha{ margin-top: 20px; width: 150px; }
+.input{
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+input{
+    width: 680px;
+    outline: none;
+    font-size: 18px;
+    border: 3px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.large{ margin-right: 40px;}
+
+
+/*  Forms   */
+.first input{   margin-top: 10px;   }
+
+
+.btn{
+    margin-top: 70px;
+    margin-block-end: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn button{
+    padding: 10px 65px;
+    color: #fff;
+    background: #191919;
+    border: none;
+    cursor: pointer;
+}
+
+.info{
+    background: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+}
+.info .icons{
+    display: flex;
+    justify-content: center;
+    margin-block-end: 40px;
+}
+.info .icons li{
+    color: #fff;
+    list-style: none;
+}
+.info .icons li a{
+    display: block;
+    font-size: 2.5em;
+    margin: 0 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+#radio_yes, #radio_no{
+    width: 20px;
+    border: 0;
+}
+
+/* Mensajew de Error*/
+.input.falla input{  border: 2.5px solid rgb(185, 0, 0);   }
+.falla{color: red;}
+.input.ok input{  border: 3px solid #1fea52;   }
+.input.ok p{  display: none;  }
+
+/*Responsive*/
+@media only screen and (max-width: 768px) { /*T*/
+    h1{ font-size: 50px;  }
+
+    .container-reg{
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+    .input{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    input{  width: 520px;   }
+    .info .icons li a{  font-size: 2rem;  }
+}
+
+@media only screen and (max-width: 600px) { /*M*/
+    h1{ font-size: 30px;  }
+
+    .container-reg{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .input{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    input{  width: 430px;   }
+    .info .icons li a{  font-size: 1.8rem;  }
+}
+
+
+
+
+

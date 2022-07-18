@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Credits FontAwesome for the icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./reg_prov.css">
+    <title>Registro de Proveedores</title>
+</head>
+<body>
+    
+    <h1>Alta de Proveedor</h1>
+    <div class="container-reg">
+
+        <form action="" id="formulario">
+            <div class="date input">
+                <label for="">Fecha:</label>
+                <input type="date" id="fecha"><p></p>
+            </div>
+<!--    First Form  -->
+            <div class="first"><h2>Datos Persona Física o Persona Moral</h2>
+                <div class="input large">
+                    <label for="">Nombre:</label><br>
+                    <input type="text" id="nomrasoc" placeholder="Nombre o Razón Social"><p></p>
+                </div>
+                <div class="input per-name">
+                    <label for="">Nombre Comercial:</label><br>
+                    <input type="text" id="nomcom" placeholder="Nombre (corto)"><p></p>
+                </div>
+
+                <div class="input per-cred">
+                    <label for="">RFC:</label><br>
+                    <input type="text" id="rfc"><p></p>
+                </div>
+                <div class="input per-cred">
+                    <label for="">CURP:</label><br>
+                    <input type="text" id="curp"><p></p>
+                </div>
+
+                <div class="input per-con">
+                    <label for="">Dirección Fiscal:</label><br>
+                    <input type="text" id="direcfis" placeholder="Dirección completa"><p></p>
+                </div>
+
+                <div class="input per-con">
+                    <label for="">Teléfono:</label><br>
+                    <input type="tel" id="telfis"><p></p>
+                </div>
+
+                <div class="input web">
+                    <label for="">Página WEB:</label><br>
+                    <input type="url" id="web" placeholder="Ingrese url"><p></p>
+                </div>
+            </div>
+<span><p class="line"></p></span>
+<!--    Second Form  -->
+            <div class="second"><h2>Datos Bancarios</h2>
+                <div class="input ban">
+                    <label for="">Banco:</label><br>
+                    <input id="bancouno" type="text"><p></p>
+
+                    <label for="">Cuenta Bancaria:</label><br>
+                    <input id="bancodos" type="text"><p></p>
+                </div>
+
+                <div class="input se">
+                    <label for="">Sucursal:</label><br>
+                    <input id="sucursal" type="text"><p></p>
+
+                    <label for="">Clave Interbancaria:</label><br>
+                    <input id="claveint" type="text"><p></p>
+                </div>
+
+                <div class="input mon">
+                    <label for="">Moneda:</label><br>
+                    <input id="moneda" type="text"><p></p>
+                </div>
+                <!--
+                <div class="coment">
+                    <p>Comentarios</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+                </div>-->
+
+                <div class="input"><h3>Adjuntar Documentos:</h3></div><br>
+                <div class="input doc">
+                    <label for="">RFC (obligatorio) </label><br>
+                    <input class="archivos" id="rfcdoc" type="file"><p></p>
+                </div>
+                <div class="input ban">
+                    <label for="">Estado de cuenta bancario (obligatorio) </label><br>
+                    <input class="archivos" id="escuent" type="file"><p></p>
+                </div>
+                <div class="input otros">
+                    <label for="">Otros (opcional) </label><br>
+                    <input class="archivos" type="file"><p></p>
+                </div>
+            </div>
+<span><p class="line"></p></span>
+<!--    Three Form  -->
+            <div class="three"><h2>Datos de Contacto</h2>
+
+                <div class="input cont-name">
+                    <label for="">Nombre:  </label><br>
+                    <input type="text" id="nomcont" placeholder="Directo"><p></p>
+                </div>
+                <div class="input cont-name">
+                    <input class="facturacion" id="contfact" type="text" placeholder="Facturación"><p></p>
+                </div>
+
+                <div class="input cont-tel">
+                    <label for="">Teléfono:</label><br>
+                    <input type="tel" id="telcont" placeholder="Directo"><p></p>
+                </div>
+                <div class="input cont-tel">
+                    <input class="facturacion" type="tel" id="telfact" placeholder="Facturación"><p></p>
+                </div>
+
+                <div class="input cont-cel">
+                    <label for="">Celular:</label><br>
+                    <input id="teldir" type="tel" placeholder="Directo"><p></p>
+                </div>
+                <div class="input cont-cel">
+                    <input id="celfact" class="facturacion" type="tel" placeholder="Facturación"><p></p>
+                </div>
+
+                <div class="input cont-ema">
+                    <label for="">Correo:</label><br>
+                    <input id="emailcont" type="email" id="email" placeholder="Directo"><p></p>
+                </div>
+                <div class="input cont-ema">
+                    <input id="emailfact" class="facturacion" type="email" placeholder="Facturación"><p></p>
+                </div>
+                
+            </div>
+
+<!--    Buttom Submit Form  -->
+            <div class="btn">
+                <button type="submit" id="enviar">Registrar</button>
+            </div><br>
+        </form>
+</div>
+
+        <div class="info">
+            <h2>Contactanos</h2>
+            <ul class="icons">
+                <li><a href="mailto: oelias@aitechnology.com.mx" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="tel:5565747557" target="_blank"><i class="fa-solid fa-phone"></i></a></li>
+                <li><a href="https://www.bing.com/maps?osid=b4e59917-0fa2-41f5-b5a2-124789d40bf1&cp=19.292101~-99.6567&lvl=16&imgid=e6e9bd4d-a75f-4a76-b606-75af5d756307&v=2&sV=2&form=S00027
+                    " target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
+            </ul>
+        </div>
+    
+
+
+    <script src="./validacion.js"></script>
+</body>
+</html>
